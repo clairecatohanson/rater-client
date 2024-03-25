@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react"
+import { useRef, useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import "./Login.css"
 
@@ -34,7 +34,7 @@ export const Login = () => {
         <div>User does not exist</div>
         <button
           className="button--close"
-          onClick={(e) => existDialog.current.close()}
+          onClick={() => existDialog.current.close()}
         >
           Close
         </button>
